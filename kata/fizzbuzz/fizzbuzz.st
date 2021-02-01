@@ -1,15 +1,17 @@
+#!/usr/bin/gst
+
 fizzbuzzMe := [ :value |
-(value \\ 3) = 0
-    ifTrue: [
-        (value \\ 5) = 0
-            ifTrue:  ['FizzBuzz']
-            ifFalse: ['Fizz']
-    ]
-    ifFalse: [
-         (value \\ 5) = 0
-             ifTrue:  ['Buzz']
-             ifFalse: [value]
-    ]
+    (value \\ 3) = 0
+        ifTrue: [
+            (value \\ 5) = 0
+                ifTrue:  ['FizzBuzz']
+                ifFalse: ['Fizz']
+        ]
+        ifFalse: [
+             (value \\ 5) = 0
+                 ifTrue:  ['Buzz']
+                 ifFalse: [value]
+        ]
 ]
 
 fizzbuzzMe value: 1.
