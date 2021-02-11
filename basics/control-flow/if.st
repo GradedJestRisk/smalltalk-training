@@ -9,7 +9,3 @@ selector := [ :input |
 
 Transcript show:(selector value: 2); cr.
 Transcript show:(selector value: 3); cr.
-
-             (5 \\ 5) = 0
-                ifTrue :  [ 0 ]
-                ifFalse : [ 'multiple neither five, nor two' ].
