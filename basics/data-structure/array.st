@@ -27,3 +27,12 @@ search := [ :person :people |
 
 search value: 'Jane' value:people.
 search value: 'Bill' value:people.
+
+"Array literal"
+animals := #('dog' 'cat').
+Transcript show: 'Animals are: ' ,  animals printString; cr.
+
+"Create new array transforming another"
+noise := #('meow' 'wouf').
+loudNoise := noise collect: [ :each | each asUppercase ].
+Transcript show: 'Animals says: ' ,  loudNoise printString; cr.

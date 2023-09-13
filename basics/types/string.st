@@ -5,6 +5,6 @@ Transcript show:(greeting); cr.
 greeting := ('Hello ' , 'world !').
 Transcript show:(greeting); cr.
 
-name := 'world'.
+name := 'world' asUppercase.
 greeting := ('Hello ' ,  name , ' !').
 Transcript show:(greeting); cr.
